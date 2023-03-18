@@ -1,7 +1,21 @@
-/* p {
-    color: rebeccapurple;
+
+*{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
 }
 
-p:hover {
-    color: brown;
-} */
+.container {
+    width: 900px;
+    border:2px solid gray;
+}
+
+.item {
+    border: 2px solid gray;
+    margin: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.item:hover {
+    background-color: rgba(0, 0, 0, 0.045);
+}
