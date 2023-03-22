@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.bigbox {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.022);
+    position: absolute;
+    top: 2.5vh;
+    bottom: 2.5vh;
+    left: 2.4vh;
+    right: 2.4vh;
+    border-radius: 11px;
+    overflow: hidden;
+    height: calc(100vh - 6vh); /* subtracting the height of top and bottom margins */
+  }
+
+
+
+.box {
+    
+    background-color: #bb4c6a;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    filter: blur(120px);
+  }
+
+  .blue {
+    background-color: #5d6298;
+  }
+ 
+  
