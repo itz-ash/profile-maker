@@ -1,12 +1,14 @@
 :root {
-  --pink: #bb4c6a;
-  --blue: #5d6298;
+  --pink: #cf4a6d;
+  --blue: #747bc0;
 }
 
 * {
   margin: 0;
   padding: 0;
   /* overflow: hidden; */
+  color: white;
+  font-family:sans-serif;
 }
 
 body {
@@ -36,11 +38,11 @@ body {
 
 .box {
   background-color: #bb4c6a;
-  width: 100vh;
-  height: 100vh;
+  width: 70vh;
+  height: 70vh;
   margin: 10px;
   filter: blur(120px);
-
+  /* box-shadow: 0 0 100px 20px #bb4c6a; */
 }
 
 .blue {
@@ -53,15 +55,35 @@ body {
 .header {
   display: flex;
   position: fixed;
+  height: 10vh;
+  width: 100%;
+  border: 2px solid #5d6298;
+  align-items: center;
 }
 .navbar {
   position: sticky;
   color: #5d6298;
+
 }
 
 #box1 {
-  animation: box 20s ease 0s
+  animation: random 20s ease 0s
   infinite normal none;
+}
+
+#box2{
+  z-index: -2;
+}
+
+.intro {
+  display: flex;
+  position: relative;
+  height: 10vh;
+  top: 25%;
+  left: 10%;
+  border: 1px white solid;
+  font-size: 5vh;
+  z-index: 200;
 }
 
 @keyframes box {
@@ -91,5 +113,23 @@ body {
   }
   100% {
     transform: translateX(0px);
+  }
+}
+
+@keyframes random {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50%, 0);
+  }
+  50% {
+    transform: translate(50%, 50%);
+  }
+  75% {
+    transform: translate(0, 50%);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
