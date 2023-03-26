@@ -42,6 +42,7 @@ body {
   height: 70vh;
   margin: 10px;
   filter: blur(120px);
+  z-index: -1;
   /* box-shadow: 0 0 100px 20px #bb4c6a; */
 }
 
@@ -57,13 +58,39 @@ body {
   position: fixed;
   height: 10vh;
   width: 100%;
-  border: 2px solid #5d6298;
+  /* border: 2px solid #5d6298; */
   align-items: center;
 }
 .navbar {
-  position: sticky;
-  color: #5d6298;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #333; */
+  color: #fff;
+  padding: 10px;
+  z-index: 1;
+}
 
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-left: 90px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  left: 110vh;
+}
+
+.navbar-right a {
+  /* margin-left: 20px;*/
+  padding-left: 29%;
+  text-decoration: none;
+}
+
+.navbar-left a {
+  text-decoration: none;
 }
 
 #box1 {
@@ -78,11 +105,11 @@ body {
 .intro {
   display: flex;
   position: relative;
-  height: 10vh;
+  /* height: 10vh; */
   top: 25%;
-  left: 10%;
+  left: 18%;
   border: 1px white solid;
-  font-size: 5vh;
+  font-size: 4.8vh;
   z-index: 200;
 }
 
