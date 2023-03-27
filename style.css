@@ -9,6 +9,7 @@
   /* overflow: hidden; */
   color: white;
   font-family:sans-serif;
+  -webkit-user-drag: none;
 }
 
 body {
@@ -33,7 +34,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   display: flex;
-  justify-content: space-around;
+justify-content: space-around;
 }
 
 .box {
@@ -49,12 +50,12 @@ body {
 .blue {
   background-color: var(--blue);
 }
-.test {
-  color: #bb4c6a;
-}
+
 
 .header {
-  display: flex;
+  /* display: flex; */
+  margin-top: 50px;
+  font-size: 1rem;
   position: fixed;
   height: 10vh;
   width: 100%;
@@ -72,48 +73,67 @@ body {
 }
 
 .navbar-left {
-  display: flex;
-  align-items: center;
-  margin-left: 90px;
+  margin-left: 2.1vh;
+  flex-grow: 1;
+  /* border: 1px solid white; */
 }
 
-.navbar-right {
-  display: flex;
-  align-items: center;
-  left: 110vh;
-}
 
-.navbar-right a {
-  /* margin-left: 20px;*/
-  padding-left: 29%;
-  text-decoration: none;
-}
 
 .navbar-left a {
   text-decoration: none;
 }
+.navbar-right a {
+  margin-left: 2vh;
+  text-decoration: none;
+}
+
+.navbar-right a:nth-child(3) {
+margin-right: 2vh;
+}
+
+.projects {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff0f;
+}
 
 #box1 {
+  /* display: none; */
+  position: absolute;
   animation: random 20s ease 0s
   infinite normal none;
 }
 
 #box2{
+  /* display: none; */
+  position: absolute;
   z-index: -2;
 }
 
 .intro {
   display: flex;
-  position: relative;
-  /* height: 10vh; */
-  top: 25%;
-  left: 18%;
-  border: 1px white solid;
-  font-size: 4.8vh;
-  z-index: 200;
+  position: inherit;
+  font-size: 2.4em;
+  z-index: 2;
+  align-items: center;
+  align-content: center;
+  height: auto;
+  width: 100vh;
+  margin: 7vh;
 }
 
-@keyframes box {
+.intro > p {
+  z-index: 100;
+    border: 1px white solid;
+}
+::selection {
+  background-color: white;
+  color: black;
+}
+
+@keyframes random {
   10% {
     transform: translateX(-100px);
   }
@@ -140,23 +160,5 @@ body {
   }
   100% {
     transform: translateX(0px);
-  }
-}
-
-@keyframes random {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(50%, 0);
-  }
-  50% {
-    transform: translate(50%, 50%);
-  }
-  75% {
-    transform: translate(0, 50%);
-  }
-  100% {
-    transform: translate(0, 0);
   }
 }
