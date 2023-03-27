@@ -128,10 +128,21 @@ margin-right: 2vh;
 
 .sec {
   display: flex;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background-color: #bb4c6a;
+  /* background-color: #ffffff11; */
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects {
+
+  height: 45vh;
+  width: 85vh;
+  margin: 2%;
+  /* background-color: rgba(235, 239, 228, 0.079); */
+  border: 2px solid white;
 }
 ::selection {
   background-color: white;
