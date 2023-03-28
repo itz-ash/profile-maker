@@ -78,10 +78,6 @@ justify-content: space-around;
   /* border: 1px solid white; */
 }
 
-.navbar-right {
-
-  /* border: 1px solid white; */
-}
 
 .navbar-left a {
   text-decoration: none;
@@ -142,8 +138,10 @@ margin-right: 2vh;
   width: 85vh;
   margin: 2%;
   /* background-color: rgba(235, 239, 228, 0.079); */
-  border: 2px solid white;
+  border: 1px dashed white;
+  /* border-style: dashed; */
 }
+
 ::selection {
   background-color: white;
   color: black;
