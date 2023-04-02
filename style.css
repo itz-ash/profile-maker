@@ -8,7 +8,7 @@
   padding: 0;
   /* overflow: hidden; */
   color: white;
-  font-family:sans-serif;
+  font-family: sans-serif;
   -webkit-user-drag: none;
 }
 
@@ -34,7 +34,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   display: flex;
-justify-content: space-around;
+  justify-content: space-around;
 }
 
 .box {
@@ -50,7 +50,6 @@ justify-content: space-around;
 .blue {
   background-color: var(--blue);
 }
-
 
 .header {
   /* display: flex; */
@@ -78,7 +77,6 @@ justify-content: space-around;
   /* border: 1px solid white; */
 }
 
-
 .navbar-left a {
   text-decoration: none;
 }
@@ -88,18 +86,16 @@ justify-content: space-around;
 }
 
 .navbar-right a:nth-child(3) {
-margin-right: 2vh;
+  margin-right: 2vh;
 }
-
 
 #box1 {
   /* display: none; */
   position: absolute;
-  animation: random 20s ease 0s
-  infinite normal none;
+  animation: random 20s ease 0s infinite normal none;
 }
 
-#box2{
+#box2 {
   /* display: none; */
   position: absolute;
   z-index: -2;
@@ -119,7 +115,7 @@ margin-right: 2vh;
 
 .intro > p {
   z-index: 100;
-    border: 1px white solid;
+  border: 1px white solid;
 }
 
 .sec {
@@ -133,7 +129,6 @@ margin-right: 2vh;
 }
 
 .projects {
-
   height: 45vh;
   width: 85vh;
   margin: 2%;
@@ -151,25 +146,25 @@ margin-right: 2vh;
   10% {
     transform: translateX(-100px);
   }
-  20%{
-    transform: translate(90px,60px);
+  20% {
+    transform: translate(90px, 60px);
   }
   30% {
-    transform: translateY(100PX);
+    transform: translateY(100px);
   }
-  40%{
-    transform: translate(120px,-80px);
+  40% {
+    transform: translate(120px, -80px);
   }
-  50%{
-    transform: translate(200px , -100px);
+  50% {
+    transform: translate(200px, -100px);
   }
-  60%{
+  60% {
     transform: translate(-70px, 90px);
   }
   70% {
-    transform: translate(200px , -50px);
+    transform: translate(200px, -50px);
   }
-  90%{
+  90% {
     transform: translate(300px, 150px);
   }
   100% {
