@@ -11,7 +11,7 @@ const Connections = () => {
       />
       <div className="connectionName">ash</div>
       <a
-        href="https://github.com/Domin-MND"
+        href="https://github.com/itz-ash"
         rel="noreferrer noopener"
         target="_blank"
       >
