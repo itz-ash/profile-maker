@@ -1,9 +1,8 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./styles/style.css";
 import Divider from "./components/Divider";
 import AboutMe from "./components/AboutMe";
+import Connections from "./components/Connections";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -26,11 +25,16 @@ function App() {
             <div className="statusText">
               test status Lorem ipsum dolor, sit amet consectetur adipisicing
               elit. Aliquam consequuntur, assumenda ame
-            </div>
-            {/* <Divider /> */}
-            <div className="aboutMain">
-              <AboutMe />
               <Divider />
+            </div>
+            <div className="aboutScroll">
+              <div className="aboutMain">
+                <AboutMe />
+                <Divider />
+              </div>
+              <div className="connectionContainer">
+                <Connections /> <Connections />
+              </div>
             </div>
           </div>
         </div>
