@@ -1,0 +1,52 @@
+.profileCard {
+  z-index: 1;
+  position: relative;
+  // background-color: #18191c;
+  background-color: $color-grey-3;
+  overflow: hidden;
+  width: 600px;
+  color: white;
+  border-radius: $border-radius;
+  margin: 2% auto;
+
+  // box-sizing: border-box;
+
+  .header {
+    padding: 74px 16px 12px 16px;
+  }
+
+  .banner {
+    aspect-ratio: 9/3;
+    background-color: #020c08;
+  }
+}
+
+.avatar {
+  background-color: $color-grey-3;
+  padding: 5px;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  top: 125px;
+  left: 16px;
+
+  img {
+    width: 120px;
+    border-radius: 50%;
+  }
+}
+
+.status {
+  -webkit-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
+  position: absolute;
+  background-color: $color-grey-3;
+  bottom: 14.64%;
+  right: 14.64%;
+  border-radius: 50%;
+  padding: 6px;
+
+  img {
+    width: 24px;
+  }
+}
