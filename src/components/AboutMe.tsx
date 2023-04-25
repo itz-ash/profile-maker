@@ -1,7 +1,9 @@
 import Divider from "./Divider";
 
 const AboutMe = () => {
-  const about = "lorem ";
+  const about =
+    "   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe necessitatibus perspiciatis maiores quidem aperiam eligendi consectetur, architecto velit, optio eum placeat esse possimus reprehenderit quis commodi atque. Delectus, obcaecati labore!";
+
   const aboutText = about.replace(/^\s+/, "");
 
   if (aboutText.length === 0) {
@@ -10,7 +12,6 @@ const AboutMe = () => {
     return (
       <>
         <div className="aboutMeContainer">
-          <Divider />
           <div className="aboutMeHeading">About Me</div>
           <div className="aboutMeContent">{aboutText}</div>
         </div>
