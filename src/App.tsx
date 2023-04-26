@@ -33,7 +33,11 @@ function App() {
                 <Divider />
               </div>
               <div className="connectionContainer">
-                <Connections /> <Connections />
+                <Connections />
+                <Connections />
+                <Connections />
+                <Connections />
+                <Connections />
               </div>
             </div>
           </div>
