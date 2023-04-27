@@ -1,4 +1,4 @@
-.profileCard {
+.profileContainer {
   z-index: 1;
   position: relative;
   // background-color: #18191c;
@@ -7,7 +7,7 @@
   width: 600px;
   color: white;
   border-radius: $border-radius;
-  margin: 2% auto;
+  margin: auto auto;
 
   // box-sizing: border-box;
 
