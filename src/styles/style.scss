@@ -2,7 +2,8 @@
 @import "variables";
 @import "utility";
 @import "profileHeader";
-@import "aboutMe";
+@import "profileMain";
+@import "formMain";
 
 * {
   margin: 0;
@@ -12,4 +13,9 @@
 body {
   font-family: "Mulish", "Open Sans", sans-serif;
   background-color: $color-grey-1;
+}
+
+.container {
+  width: 100%;
+  display: flex;
 }

@@ -22,7 +22,7 @@
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
-.profileCard {
+.profileContainer {
   z-index: 1;
   position: relative;
   background-color: #1e1f22;
@@ -30,12 +30,12 @@
   width: 600px;
   color: white;
   border-radius: 9px;
-  margin: 2% auto;
+  margin: auto auto;
 }
-.profileCard .header {
+.profileContainer .header {
   padding: 74px 16px 12px 16px;
 }
-.profileCard .banner {
+.profileContainer .banner {
   aspect-ratio: 9/3;
   background-color: #000000;
 }
@@ -98,6 +98,21 @@
   font-weight: 200;
   white-space: pre-wrap;
 }
+.aboutCard .aboutMeContainer .noteContainer {
+  padding-top: 17px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.aboutCard .aboutMeContainer .form {
+  padding-top: 13px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.aboutCard .aboutMeContainer .form:focus {
+  outline: none;
+}
 .aboutCard .aboutScroll {
   height: 250px;
   overflow-y: scroll;
@@ -134,6 +149,24 @@
   margin-left: 10px;
   flex-grow: 1;
 }
+.aboutCard .noteContainerNon {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.aboutCard .formNon {
+  padding-top: 13px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.aboutCard .formNon:focus {
+  outline: none;
+}
+
+.formContainer {
+  margin: auto auto;
+}
 
 * {
   margin: 0;
@@ -143,4 +176,9 @@
 body {
   font-family: "Mulish", "Open Sans", sans-serif;
   background-color: #313338;
+}
+
+.container {
+  width: 100%;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
