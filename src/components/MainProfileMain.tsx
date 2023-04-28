@@ -1,6 +1,7 @@
 import React from "react";
 import Divider from "./Divider";
 import AboutMe from "./AboutMe";
+import Connections from "./Connections";
 const MainProfileMain = () => {
   return (
     <div>
@@ -20,7 +21,11 @@ const MainProfileMain = () => {
               <AboutMe />
               <Divider />
             </div>
-            <div className="connectionContainer"></div>
+            <div className="connectionContainer">
+              <Connections />
+              <Connections />
+              <Connections />
+            </div>
           </div>
         </div>
       </div>
