@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;200;500;300;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
 @import "variables";
 @import "utility";
 @import "profileHeader";
 @import "profileMain";
 @import "formMain";
+@import "formColorPicker";
 
 * {
   margin: 0;
@@ -13,9 +14,12 @@
 body {
   font-family: "Mulish", "Open Sans", sans-serif;
   background-color: $color-grey-1;
+  // display: flex;
 }
 
 .container {
   width: 100%;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
