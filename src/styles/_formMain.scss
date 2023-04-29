@@ -1,3 +1,69 @@
 .formContainer {
-  margin: auto auto;
+  // margin: auto auto;
+}
+
+.formCard {
+  padding: 10px;
+  height: 500px;
+  width: 350px;
+  // border: 1px solid #a45994;
+  background-color: $color-greyPurple-1;
+  border-radius: 10px;
+}
+
+.formButton {
+  color: white;
+  border-radius: 4px;
+  padding: 7px 15px 7px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.colorPickerContainer {
+  // margin: 20px;
+  display: flex;
+  // align-items: center;
+}
+
+.primaryPickerButton {
+  margin: 13px;
+  margin-left: 0;
+}
+
+.accentPickerButton {
+  margin: 13px;
+  margin-left: 0;
+}
+
+.colorPickerText {
+  margin-top: 3px;
+  font-size: 10px;
+  text-align: center;
+  color: $color-grey-text;
+}
+
+.profileBannerContainer {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.profileBannerButton {
+  margin: 10px 10px 10px auto;
+
+  Button {
+    font-weight: medium;
+  }
+}
+
+.profileAvatarContainer {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.profileAvatarButton {
+  margin: 10px 10px 10px auto;
+
+  Button {
+    font-weight: medium;
+  }
 }
