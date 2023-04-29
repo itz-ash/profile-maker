@@ -26,9 +26,11 @@ const AboutMe = () => {
     return (
       <>
         <div className="aboutMeContainer">
-          <div className="aboutMeHeading">About Me</div>
+          <div className="aboutMeHeading smallHeaderText">About Me</div>
           <div className="aboutMeContent">{aboutText}</div>
-          <div className="noteContainer">note</div>
+          <div className="noteContainer">
+            <div className="smallHeaderText">note</div>
+          </div>
           <form>
             <label>
               <input
