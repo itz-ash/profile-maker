@@ -2,6 +2,7 @@
   border-radius: 10px !important;
   background-color: $color-grey-1 !important;
   position: fixed !important;
+  z-index: 1;
 }
 
 label {
@@ -13,31 +14,12 @@ label {
   background-color: $color-grey-4 !important;
 }
 
-#rc-editable-input-2 {
-  border-radius: 4px !important;
-  // background-color: aqua !important;
-}
-
-#rc-editable-input-16 {
-  border-radius: 4px !important;
-}
-
-#rc-editable-input-18 {
-  border-radius: 4px !important;
-}
-
-#rc-editable-input-20 {
-  border-radius: 4px !important;
-}
-
-#rc-editable-input-22 {
-  border-radius: 4px !important;
-}
-
-#rc-editable-input-24 {
-  border-radius: 4px !important;
-}
-
+#rc-editable-input-2,
+#rc-editable-input-16,
+#rc-editable-input-18,
+#rc-editable-input-20,
+#rc-editable-input-22,
+#rc-editable-input-24,
 #rc-editable-input-26 {
   border-radius: 4px !important;
 }

@@ -5,7 +5,12 @@ const MainProfileHeader = () => {
     <>
       <div className="banner"></div>
       <div className="avatar">
-        <img alt=" " aria-hidden="true" src="/public/avatar.png" />
+        <img
+          className="avatarPhoto"
+          alt=" "
+          aria-hidden="true"
+          src="/public/avatar.png"
+        />
         <div className="status">
           <img alt=" " aria-hidden="true" src="/public/status/online.png" />
         </div>
