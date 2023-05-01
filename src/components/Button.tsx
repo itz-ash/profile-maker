@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useState } from "react";
 
 interface Props {
   children: ReactNode;
@@ -14,13 +14,32 @@ const Button = (props: Props) => {
       ? "green"
       : "grey";
 
+  const [showPopup, setShowPopup] = useState(false);
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
+
   return (
-    <button
-      className={"formButton " + backgroundColorClass}
-      style={{ ...props.customStyle }}
-    >
-      {props.children}
-    </button>
+    <div>
+      <button
+        className={"formButton " + backgroundColorClass}
+        style={{ ...props.customStyle }}
+        onClick={togglePopup}
+      >
+        {props.children}
+      </button>
+      {showPopup && (
+        <div className="popupContainer">
+          <div className="popup">
+            <span className="close" onClick={togglePopup}>
+              &times;
+            </span>
+            <p>Hello! I'm a pop-up.</p>
+          </div>
+        </div>
+      )}
+    </div>
   );
 };
 
