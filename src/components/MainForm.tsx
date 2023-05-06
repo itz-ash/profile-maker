@@ -44,7 +44,7 @@ const MainForm = () => {
           </div>
         </div>
         <Divider />
-        <div className="profileBannerContainer">
+        {/* <div className="profileBannerContainer">
           <div className="smallHeaderText grey-text">profile banner</div>
           <div className="profileBannerButton">
             <Button type="primary">Change Banner</Button>
@@ -64,7 +64,7 @@ const MainForm = () => {
             <Button type="primary">Change Status</Button>
           </div>
         </div>
-        <Divider />
+        <Divider /> */}
         <div className="addConnectionsContainer">
           <div className="smallHeaderText grey-text">add connections</div>
           <DropdownButton />

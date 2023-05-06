@@ -36,9 +36,10 @@
 .dropdownItemText {
   box-sizing: border-box;
   padding: 14px;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
   text-transform: capitalize;
+  flex-grow: 1;
 }
 
 .dropdownItemContainer {
@@ -51,13 +52,14 @@
   display: flex;
   // justify-content: center;
   align-items: center;
+  text-transform: capitalize;
   &:hover {
     background-color: $color-grey-3;
   }
 }
 
 .dropdownMenu {
-  height: 200px;
+  height: 700px;
   overflow-y: scroll;
   background-color: $color-grey-2;
   border-radius: 5px;
