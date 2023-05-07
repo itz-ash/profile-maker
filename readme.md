@@ -1,6 +1,6 @@
 # Discord profile
 
-This project is a clone of the Discord profile feature, allowing users to upload an avatar, banner, change their status, add an 'about me' section, add social media connections, and customize icons dynamically. It is built with TypeScript, SCSS, and React.
+This project is a clone of the Discord profile feature, allowing users to upload an avatar, banner, change their status, add an about me section, add social media connections, and customize icons dynamically. It is built with TypeScript, SCSS, and React.
 
 ## Installation
 
@@ -31,15 +31,15 @@ npm run dev
 
 ### If you would like to contribute to this project, follow these steps:
 
-**1. Fork the repository**
-**2. Create a new branch for your changes**
-**3. Make your changes and commit them with descriptive commit messages**
-**4. Push your changes to your forked repository**
-**5. Create a pull request to merge your changes into the main repository**
+**1.** Fork the repository
+**2.** Create a new branch for your changes
+**3.** Make your changes and commiz them with descriptive commit messages
+**4.** Push your changes to your forked repository
+**5.** Create a pull request to merge your changes into the main repository
 
 ## Contact
 
-**If you have any questions or feedback about this project, you can contact me at**
+##### If you have any questions or feedback about this project, you can contact me at
 
 <a alt="gmail" href="https://chawlaashneet@gmail.com">
 <img align="left" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
