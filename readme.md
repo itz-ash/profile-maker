@@ -31,11 +31,11 @@ npm run dev
 
 ### If you would like to contribute to this project, follow these steps:
 
-**1.** Fork the repository
-**2.** Create a new branch for your changes
-**3.** Make your changes and commiz them with descriptive commit messages
-**4.** Push your changes to your forked repository
-**5.** Create a pull request to merge your changes into the main repository
+**1.** Fork the repository <br>
+**2.** Create a new branch for your changes<br>
+**3.** Make your changes and commiz them with descriptive commit messages<br>
+**4.** Push your changes to your forked repository<br>
+**5.** Create a pull request to merge your changes into the main repository<br>
 
 ## Contact
 
