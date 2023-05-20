@@ -1,14 +1,12 @@
 <h1  align="center" id="warning" >⚠️ This project is in production and is not ready to use</div>
 
-
-
 # Discord profile
 
 This project is a clone of the Discord profile feature, allowing users to upload an avatar, banner, change their status, add an about me section, add social media connections, and customize icons dynamically. It is built with TypeScript, SCSS, and React.
 
 ## Installation
 
-You can clone the repository using the following command:
+You can clone the repository using the following command:;
 
 ```bash
 git clone https://github.com/itz-ash/profile-maker.git
