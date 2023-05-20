@@ -1,6 +1,13 @@
 <h1  align="center" id="warning" >⚠️ This project is in production and is not ready to use</div>
 
-
+<style>
+  #warning {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+</style>
 
 # Discord profile
 

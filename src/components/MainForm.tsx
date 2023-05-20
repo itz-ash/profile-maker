@@ -4,30 +4,7 @@ import React from "react";
 import Divider from "./Divider";
 import { useState } from "react";
 import DropdownMenu from "./DropdownMenu";
-
-const DropdownButton = () => {
-  const [open, setopen] = useState(false);
-  const caretClass = open ? "caretSVG rotate-90" : "caretSVG rotate0";
-  return (
-    <>
-      <a
-        onClick={() => {
-          setopen(!open);
-        }}
-        className="dropdownButton"
-      >
-        <p className="dropdownText">Add Connections</p>
-        <img className={caretClass} src="./public/icons/caret.svg"></img>
-      </a>
-      {open && (
-        <div>
-          <DropdownMenu />
-        </div>
-      )}
-    </>
-  );
-};
-
+import DropdownButton from "./DropdownButton";
 const MainForm = () => {
   return (
     <div className="formCard">
@@ -44,7 +21,7 @@ const MainForm = () => {
           </div>
         </div>
         <Divider />
-        {/* <div className="profileBannerContainer">
+        <div className="profileBannerContainer">
           <div className="smallHeaderText grey-text">profile banner</div>
           <div className="profileBannerButton">
             <Button type="primary">Change Banner</Button>
@@ -64,9 +41,9 @@ const MainForm = () => {
             <Button type="primary">Change Status</Button>
           </div>
         </div>
-        <Divider /> */}
-        <div className="addConnectionsContainer">
-          <div className="smallHeaderText grey-text">add connections</div>
+        <Divider />
+        <div className="addIconsContainer">
+          <div className="smallHeaderText grey-text">add icons</div>
           <DropdownButton />
         </div>
       </div>

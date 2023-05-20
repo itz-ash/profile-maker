@@ -21,7 +21,7 @@ const Button = (props: Props) => {
   };
 
   return (
-    <div>
+    <>
       <button
         className={"formButton " + backgroundColorClass}
         style={{ ...props.customStyle }}
@@ -39,7 +39,7 @@ const Button = (props: Props) => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

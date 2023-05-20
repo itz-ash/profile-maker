@@ -316,6 +316,7 @@
 .profileBannerContainer {
   font-weight: 600;
   margin-bottom: 15px;
+  display: inline;
 }
 
 .profileBannerButton {
@@ -328,6 +329,7 @@
 .profileAvatarContainer {
   font-weight: 600;
   margin-bottom: 15px;
+  display: inline;
 }
 
 .profileAvatarButton {
@@ -340,6 +342,7 @@
 .changeStatusContainer {
   font-weight: 600;
   margin-bottom: 15px;
+  display: inline;
 }
 
 .changeStatusButton {
@@ -347,13 +350,6 @@
 }
 .changeStatusButton Button {
   font-weight: medium;
-}
-
-.chrome-picker {
-  border-radius: 10px !important;
-  background-color: #313338 !important;
-  position: fixed !important;
-  z-index: 1;
 }
 
 label {
@@ -378,7 +374,7 @@ label {
 .colorPickerButton {
   width: 70px;
   height: 50px;
-  border: none;
+  border: none !important;
   border-radius: 5px;
   display: block;
 }
@@ -442,7 +438,7 @@ label {
 }
 
 .dropdownMenu {
-  height: 700px;
+  height: 200px;
   overflow-y: scroll;
   background-color: #232428;
   border-radius: 5px;

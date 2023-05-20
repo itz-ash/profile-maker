@@ -1,7 +1,7 @@
-import React from "react";
-import Divider from "./Divider";
-import AboutMe from "./AboutMe";
-import Connections from "./Connections";
+import React from "react"
+import Divider from "./Divider"
+import AboutMe from "./AboutMe"
+import Connections from "./Connections"
 const MainProfileMain = () => {
   return (
     <div>
@@ -30,7 +30,7 @@ const MainProfileMain = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MainProfileMain;
+export default MainProfileMain
