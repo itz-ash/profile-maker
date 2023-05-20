@@ -8,7 +8,7 @@ const MainProfileMain = () => {
       <div className="header">
         <div className="aboutCard">
           <div className="tag">
-            <span className="aboutName">`NotAsh</span>
+            <span className="aboutName">`prod</span>
             <span className="discriminator">#4190</span>
           </div>
           <div className="statusText">
