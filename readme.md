@@ -1,14 +1,5 @@
 <h1  align="center" id="warning" >⚠️ This project is in production and is not ready to use</div>
 
-<style>
-  #warning {
-    color: red;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-  }
-</style>
-
 # Discord profile
 
 This project is a clone of the Discord profile feature, allowing users to upload an avatar, banner, change their status, add an about me section, add social media connections, and customize icons dynamically. It is built with TypeScript, SCSS, and React.
