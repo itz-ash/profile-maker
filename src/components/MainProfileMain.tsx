@@ -1,14 +1,14 @@
-import React from "react";
-import Divider from "./Divider";
-import AboutMe from "./AboutMe";
-import Connections from "./Connections";
+import React from "react"
+import Divider from "./Divider"
+import AboutMe from "./AboutMe"
+import Connections from "./Connections"
 const MainProfileMain = () => {
   return (
     <div>
       <div className="header">
         <div className="aboutCard">
           <div className="tag">
-            <span className="aboutName">`NotAsh</span>
+            <span className="aboutName">`prod</span>
             <span className="discriminator">#4190</span>
           </div>
           <div className="statusText">
@@ -30,7 +30,7 @@ const MainProfileMain = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MainProfileMain;
+export default MainProfileMain
