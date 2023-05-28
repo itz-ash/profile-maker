@@ -6,3 +6,11 @@ export const changeAboutMe = (aboutMe: string) => {
     });
   };
 };
+
+export const removeAboutMe = () => {
+  return (dispatch: any) => {
+    dispatch({
+      type: "removeAboutMe",
+    });
+  };
+};

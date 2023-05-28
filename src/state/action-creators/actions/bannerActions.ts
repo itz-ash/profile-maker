@@ -1,20 +1,8 @@
-export const changeBanner = (args: string) => {
+export const changeBanner = (bannerLink: string) => {
   return (dispatch: any) => {
     dispatch({
       type: "changeBanner",
-      payload: args
+      banner: bannerLink
     });
-
-
-  };
-};
-
-export const removeBanner = () => {
-  return (dispatch: any) => {
-    dispatch({
-      type: "removeBanner",
-    });
-
-
   };
 };

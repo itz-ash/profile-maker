@@ -1,11 +1,9 @@
-export const changeAvatar = (args: string) => {
+export const changeAvatar = (avatarLink: string) => {
   return (dispatch: any) => {
     dispatch({
       type: "changeAvatar",
-      payload: args
+      payload: avatarLink
     });
-
-
   };
 };
 
@@ -15,7 +13,5 @@ export const removeAvatar = () => {
     dispatch({
       type: "removeAvatar",
     });
-
-
   };
 };
