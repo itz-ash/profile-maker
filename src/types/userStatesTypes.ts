@@ -1,8 +1,7 @@
-export type nameTypes =
+export type userStateNameTypes =
   | "online"
   | "dnd"
   | "offline"
   | "idle"
   | "mobile"
   | "streaming"
-export type visibleTypes = true | false

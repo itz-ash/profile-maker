@@ -1,11 +1,9 @@
+import { userStateNameTypes } from "./userStatesTypes";
+
 export interface InitialStateTypes {
   banner?: string;
   avatar?: string;
-  userState?: {
-    name: string;
-    src: string;
-    visible: boolean;
-  }[];
+  userState?: userStateNameTypes;
   icon?: {
     name: string;
     src: string;
@@ -19,7 +17,6 @@ export interface InitialStateTypes {
   connections?: {
     name: string;
     link: string
-    src: string;
     visible: boolean;
   }[];
 }
