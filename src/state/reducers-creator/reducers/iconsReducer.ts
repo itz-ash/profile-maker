@@ -1,4 +1,4 @@
-const iconReducer = (state = "a", action:any):any => {
+const iconReducer = (state = "", action: any): any => {
   if (action.type === "changeIcon") {
     return {
       name: action.name,
