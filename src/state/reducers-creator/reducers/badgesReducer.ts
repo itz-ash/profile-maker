@@ -1,4 +1,4 @@
-const iconReducer = (state = "", action: any): any => {
+const badageReducer = (state = "", action: any): any => {
   if (action.type === "changeIcon") {
     return {
       name: action.name,
@@ -9,4 +9,4 @@ const iconReducer = (state = "", action: any): any => {
   }
 };
 
-export default iconReducer;
+export default badageReducer;

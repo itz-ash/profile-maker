@@ -83,7 +83,7 @@ export const connectionsInitial = [
   {
     name: "league-of-legends",
     link: "https...",
-    visible: false
+    visible: true
   },
   {
     name: "riot-games",
@@ -93,7 +93,7 @@ export const connectionsInitial = [
   {
     name: "twitch",
     link: "https...",
-    visible: false
+    visible: true
   },
   {
     name: "youtube",

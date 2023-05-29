@@ -1,14 +1,13 @@
 import { userStateNameTypes } from "./userStatesTypes";
-
 export interface InitialStateTypes {
   banner?: string;
   avatar?: string;
   userState?: userStateNameTypes;
-  icon?: {
+  badges?: {
     name: string;
-    src: string;
     visible: boolean;
   }[];
+  status?: string;
   name?: {
     displayName: string,
     userName: string

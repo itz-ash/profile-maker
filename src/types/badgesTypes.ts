@@ -1,4 +1,5 @@
-export type iconsName =
+export default badgesName
+type badgesName =
   | "active-developer"
   | "boost-1-month"
   | "boost-2-month"
@@ -30,4 +31,3 @@ export type iconsName =
   | "server-owner"
   | "supports-slash-commands";
 
-export type visibleTypes = true | false
