@@ -1,4 +1,4 @@
-export const changeAvatar = (avatarLink: string) => {
+export const changeAvatar = (avatarLink: any): any => {
   return (dispatch: any) => {
     dispatch({
       type: "changeAvatar",

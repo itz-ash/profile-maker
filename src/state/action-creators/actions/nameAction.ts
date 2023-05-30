@@ -1,9 +1,17 @@
-export const changeName = (displayName: string, UserName: string) => {
+export const changeDisplayName = (displayName: string) => {
   return (dispatch: any) => {
     dispatch({
-      type: "changeName",
+      type: "changeDisplayName",
       displayName: displayName,
-      UserName: UserName
+    });
+  };
+};
+
+export const changeUserName = (userName: string) => {
+  return (dispatch: any) => {
+    dispatch({
+      type: "changeUserName",
+      userName: userName,
     });
   };
 };

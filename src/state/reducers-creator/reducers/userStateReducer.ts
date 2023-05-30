@@ -2,9 +2,7 @@
 
 const userStateReducer = (state = "online", action: any): any => {
   if (action.type === "changeUserState") {
-    return {
-      name: action.name,
-    }
+    return action.userState
   } else {
     return state;
   }

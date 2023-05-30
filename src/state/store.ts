@@ -7,8 +7,8 @@ import { nameInitial } from "./initialStates/nameInitialStates";
 import { connectionsInitial } from "./initialStates/connectionsInitialState";
 
 const initialState: InitialStateTypes = {
-  banner: "banner",
-  avatar: "avatar",
+  banner: null,
+  avatar: null,
   userState: "online",
   status: "status",
   badges: badgesInitial,

@@ -1,9 +1,9 @@
 
 
-const bannerReducer = (state = "init banner reducer", action: any) => {
+const bannerReducer = (state = null, action: any) => {
 
   if (action.type === "changeBanner") {
-    return action.payload;
+    return action.banner;
   } else {
     return state
   }

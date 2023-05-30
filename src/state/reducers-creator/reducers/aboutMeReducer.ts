@@ -1,8 +1,6 @@
 const aboutMeReducer = (state = "", action: any): any => {
-  if (action.type === "changeaboutMe") {
-    return {
-      aboutMe: action.aboutMe,
-    }
+  if (action.type === "changeAboutMe") {
+    return action.aboutMe;
   } else {
     return state;
   }

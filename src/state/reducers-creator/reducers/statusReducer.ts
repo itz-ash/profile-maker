@@ -1,8 +1,6 @@
 const statusReducer = (state = "", action: any): any => {
   if (action.type === "changeStatus") {
-    return {
-      status: action.status,
-    }
+    return action.status
   } else {
     return state;
   }

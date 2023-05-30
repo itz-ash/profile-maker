@@ -1,7 +1,7 @@
 import { userStateNameTypes } from "./userStatesTypes";
 export interface InitialStateTypes {
-  banner?: string;
-  avatar?: string;
+  banner?: File | null
+  avatar?: File | null;
   userState?: userStateNameTypes;
   badges?: {
     name: string;
