@@ -9,7 +9,7 @@ const UserName = () => {
     (state: InitialStateTypes) => state.name?.userName
   )
 
-  return <div>UserName - {userName}</div>
+  return <>{userName}</>
 }
 
 export default UserName

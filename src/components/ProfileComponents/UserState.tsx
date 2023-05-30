@@ -4,8 +4,6 @@ import { useSelector } from "react-redux/es/exports"
 // import actionCreators from "../../state/action-creators/index"
 import { InitialStateTypes } from "../../types/initialStateTypes"
 
-// TODO - show icon only
-
 const UserState = () => {
   const userState = useSelector((state: InitialStateTypes) => state.userState)
 

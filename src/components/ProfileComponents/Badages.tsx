@@ -19,7 +19,7 @@ const Badges = () => {
   return (
     <>
       {visibleNames.map((name: string, index: number) => (
-        <img src={`/badages/${name}.svg`} key={index} />
+        <img className="badge" src={`/badages/${name}.svg`} key={index} />
       ))}
     </>
   )
