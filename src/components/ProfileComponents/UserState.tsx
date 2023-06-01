@@ -1,13 +1,14 @@
 import { useSelector } from "react-redux/es/exports"
-// import { useDispatch } from "react-redux/es/hooks/useDispatch"
-// import { bindActionCreators } from "redux"
-// import actionCreators from "../../state/action-creators/index"
 import { InitialStateTypes } from "../../types/initialStateTypes"
 
-const UserState = () => {
+interface Props {
+  className?: string
+}
+
+const UserState = (props: Props) => {
   const userState = useSelector((state: InitialStateTypes) => state.userState)
 
-  return <img src={`status/${userState}.svg`}></img>
+  return <img className={props.className} src={`status/${userState}.svg`}></img>
 }
 
 export default UserState

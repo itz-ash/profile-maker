@@ -1,10 +1,12 @@
 import { useSelector } from "react-redux/es/exports"
-// import { useDispatch } from "react-redux/es/hooks/useDispatch"
-// import { bindActionCreators } from "redux"
-// import actionCreators from "../../state/action-creators/index"
 import { InitialStateTypes } from "../../types/initialStateTypes"
 
-const Connection = () => {
+interface Props {
+  className?: string
+  type?: "name" | "icon"
+}
+
+const Connection = (props: Props) => {
   const connections = useSelector(
     (state: InitialStateTypes) => state.connections
   )
@@ -22,8 +24,10 @@ const Connection = () => {
     <div>
       {visibleNames.map((name: string, index: number) => (
         <>
-          <img src={`/connections/${name}.svg`} key={index} />
-          <span> {name.replaceAll("-", " ")} </span>
+          <div className={props.className}>
+            <img src={`/connections/${name}.svg`} key={index} />
+            <span>{name.replaceAll("-", " ")} </span>
+          </div>
         </>
       ))}
     </div>

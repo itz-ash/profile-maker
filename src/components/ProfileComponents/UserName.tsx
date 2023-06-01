@@ -1,15 +1,16 @@
 import { useSelector } from "react-redux/es/exports"
-// import { useDispatch } from "react-redux/es/hooks/useDispatch"
-// import { bindActionCreators } from "redux"
-// import actionCreators from "../../state/action-creators/index"
 import { InitialStateTypes } from "../../types/initialStateTypes"
 
-const UserName = () => {
+interface Props {
+  className?: string
+}
+
+const UserName = (props: Props) => {
   const userName = useSelector(
     (state: InitialStateTypes) => state.name?.userName
   )
 
-  return <>{userName}</>
+  return <div className={props.className}>{userName}</div>
 }
 
 export default UserName

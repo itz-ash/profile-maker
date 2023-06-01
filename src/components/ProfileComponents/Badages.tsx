@@ -1,15 +1,16 @@
 import { useSelector } from "react-redux/es/exports"
-// import { useDispatch } from "react-redux/es/hooks/useDispatch"
-// import { bindActionCreators } from "redux"
-// import actionCreators from "../../state/action-creators/index"
 import { InitialStateTypes } from "../../types/initialStateTypes"
 
-const Badges = () => {
+interface Props {
+  className?: string
+}
+
+const Badges = (props: Props) => {
   const badges = useSelector((state: InitialStateTypes) => state.badges)
   console.log(badges)
 
   if (!badges) {
-    return <div>Loading...</div>
+    return <>Loading...</>
   }
 
   const visibleNames = badges
@@ -19,7 +20,11 @@ const Badges = () => {
   return (
     <>
       {visibleNames.map((name: string, index: number) => (
-        <img className="badge" src={`/badages/${name}.svg`} key={index} />
+        <img
+          className={props.className}
+          src={`/badages/${name}.svg`}
+          key={index}
+        />
       ))}
     </>
   )
