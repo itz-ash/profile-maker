@@ -1,0 +1,11 @@
+@import "./variables";
+@import "./utilities";
+@import "./profile-card";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  background-color: rgb(134, 134, 134);
+  overflow-y: hidden;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
