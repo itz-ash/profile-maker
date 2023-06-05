@@ -1,13 +1,13 @@
 import { useState } from "react"
 import { useDispatch } from "react-redux"
 import { bindActionCreators } from "redux"
-import actionCreators from "../../state/action-creators"
+import actionCreators from "../src/state/action-creators"
 
-const ChangeUserState = () => {
+const ChangeUserName = () => {
   const dispatch = useDispatch()
-  const { changeUserState } = bindActionCreators(actionCreators, dispatch)
+  const { changeUserName } = bindActionCreators(actionCreators, dispatch)
 
-  const [inputValue, setInputValue] = useState("online")
+  const [inputValue, setInputValue] = useState("")
 
   const handleInputChange = (event: any) => {
     setInputValue(event.target.value)
@@ -15,7 +15,7 @@ const ChangeUserState = () => {
 
   const handleSubmit = (event: any) => {
     event.preventDefault()
-    changeUserState(inputValue)
+    changeUserName(inputValue)
     setInputValue("")
   }
 
@@ -23,11 +23,11 @@ const ChangeUserState = () => {
     <div>
       <form onSubmit={handleSubmit}>
         <input type="text" value={inputValue} onChange={handleInputChange} />
-        <button type="submit">Change userState</button>
+        <button type="submit">Change UserName</button>
       </form>
       <p></p>
     </div>
   )
 }
 
-export default ChangeUserState
+export default ChangeUserName

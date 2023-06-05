@@ -1,11 +1,11 @@
 import { useState } from "react"
 import { useDispatch } from "react-redux"
 import { bindActionCreators } from "redux"
-import actionCreators from "../../state/action-creators"
+import actionCreators from "../src/state/action-creators"
 
-const ChangeDisplayName = () => {
+const ChangeAboutMe = () => {
   const dispatch = useDispatch()
-  const { changeDisplayName } = bindActionCreators(actionCreators, dispatch)
+  const { changeAboutMe } = bindActionCreators(actionCreators, dispatch)
 
   const [inputValue, setInputValue] = useState("")
 
@@ -15,7 +15,7 @@ const ChangeDisplayName = () => {
 
   const handleSubmit = (event: any) => {
     event.preventDefault()
-    changeDisplayName(inputValue)
+    changeAboutMe(inputValue)
     setInputValue("")
   }
 
@@ -23,11 +23,11 @@ const ChangeDisplayName = () => {
     <div>
       <form onSubmit={handleSubmit}>
         <input type="text" value={inputValue} onChange={handleInputChange} />
-        <button type="submit">Change displayname</button>
+        <button type="submit">Change About Me</button>
       </form>
       <p></p>
     </div>
   )
 }
 
-export default ChangeDisplayName
+export default ChangeAboutMe
