@@ -1,4 +1,4 @@
-<h1  align="center" id="warning" >⚠️ This project is in production and is not ready to use</h1>
+<h1  align="center" id="warning" >⚠️ This project is in development and is not ready to use</h1>
 
 <h1> TODOs</h1>
 
